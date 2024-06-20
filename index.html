@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimoh Toheeb - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        main {
+            padding: 2rem;
+            background: #fff;
+        }
+        
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-video {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-text p {
+            font-size: 1.25rem;
+        }
+        
+        .about,
+        .skills,
+        .projects,
+        .contact {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .about img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .skills ul li {
+            background: #e7e5e5;
+            padding: 1rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+        
+        .skills li:first-child {
+            background-color: blue;
+            color: white;
+        }
+        
+        .skills li:not(:first-child) {
+            background-color: rgb(255, 153, 0);
+        }
+        
+        .skills li:last-child {
+            background-color: blue;
+            color: white;
+        }
+        
+        .projects .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .projects .project {
+            background: #e3e3e3;
+            padding: 1rem;
+            width: 30%;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .projects .project img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .contact form label,
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="IMG_2137.JPG" width="50px" height="50px" border-radius="20px">
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="5200360-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-text">
+                <h2>Hi, I'm Jimoh Toheeb</h2>
+                <p>Website Developer</p>
+                <p>Also known as Jimson</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm Jimoh Toheeb, a passionate and creative website developer. I have a knack for creating visually appealing and user-friendly websites. With years of experience in web development, I specialize in both front-end and back-end development,
+                ensuring the best performance and functionality of websites. In my free time, I love learning new technologies and improving my skills.</p>
+            <img src="IMG_2137.JPG" alt="Jimoh Toheeb">
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Database Management</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <article class="project">
+                    <img src="new.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A web application that allows users to track their tasks and manage their time efficiently.</p>
+                </article>
+                <article class="project">
+                    <img src="th-2537405918.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce website with a user-friendly interface and secure payment gateway integration.</p>
+                </article>
+                <article class="project">
+                    <img src="th-2068937694.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A portfolio website for a photographer, showcasing a gallery of stunning images.</p>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="contactMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jimoh Toheeb. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js">
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var nameInput = document.getElementById('name').value;
+            var emailInput = document.getElementById('email').value;
+            var messageInput = document.getElementById('message').value;
+            var contactMessage = document.getElementById('contactMessage');
+
+            if (nameInput && validateEmail(emailInput) && messageInput) {
+                contactMessage.textContent = 'Thank you for reaching out, ' + nameInput + '! I will get back to you soon.';
+                contactMessage.style.color = 'green';
+                this.reset();
+            } else {
+                contactMessage.textContent = 'Please fill in all fields correctly.';
+                contactMessage.style.color = 'red';
+            }
+        });
+
+        function validateEmail(email) {
+            var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return re.test(email);
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
